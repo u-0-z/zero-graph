@@ -1,0 +1,19 @@
+{
+  "name": "zerograph-hello-world",
+  "version": "1.0.0",
+  "description": "ZeroGraph Hello World Example",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@u0z/zero-graph": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
