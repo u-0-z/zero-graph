@@ -5,15 +5,13 @@
 </div>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![npm version](https://badge.fury.io/js/@u0z/zero-graph.svg)](https://badge.fury.io/js/@u0z/zero-graph)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 
-ZeroGraph TypeScript is a [minimalist](https://github.com/u-0-z/zero-graph/blob/main/src/index.ts) LLM framework designed for AI Agent programming
+ZeroGraph TypeScript is a [minimalist](https://github.com/u-0-z/zero-graph/blob/master/src/index.ts) LLM framework designed for AI Agent programming
 
 ZeroGraph is a TypeScript implementation of [PocketFlow](https://github.com/The-Pocket/PocketFlow) (Python), designed to collectively advance the development of agent-oriented LLM programming framework technologies and concepts.
 
 - **Lightweight**: Just 300 lines(10kb). Zero bloat, zero dependencies, zero vendor lock-in.
-- **Expressive**: Everything you love—([Multi-](https://u-zero.github.io/ZeroGraph/design_pattern/multi_agent.html))[Agents](https://u-zero.github.io/ZeroGraph/design_pattern/agent.html), [Workflow](https://u-zero.github.io/ZeroGraph/design_pattern/workflow.html), [RAG](https://u-zero.github.io/ZeroGraph/design_pattern/rag.html), and more.
 - **TypeScript Native**: Full type safety and excellent IDE support.
 - **[Agentic Coding](https://zacharyhuang.substack.com/p/agentic-coding-the-most-fun-way-to)**: Let AI Agents (e.g., Cursor AI) build Agents—10x productivity boost!
 
