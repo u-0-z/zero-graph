@@ -1,7 +1,7 @@
 # ZeroGraph TypeScript
 
 <div align="center">
-  <img src="docs/zero.jpg" alt="Zero Graph – Minimalist LLM framework designed for AI Agent programming" width="600"/>
+  <img src="docs/zero.jpg" alt="Zero Graph – Minimalist LLM framework designed for AI Agent programming" width="400"/>
 </div>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -12,7 +12,7 @@ ZeroGraph TypeScript is a [minimalist](https://github.com/u-0-z/zero-graph/blob/
 
 ZeroGraph is a TypeScript implementation of [PocketFlow](https://github.com/The-Pocket/PocketFlow) (Python), designed to collectively advance the development of agent-oriented LLM programming framework technologies and concepts.
 
-- **Lightweight**: Just 100 lines. Zero bloat, zero dependencies, zero vendor lock-in.
+- **Lightweight**: Just 300 lines(10kb). Zero bloat, zero dependencies, zero vendor lock-in.
 - **Expressive**: Everything you love—([Multi-](https://u-zero.github.io/ZeroGraph/design_pattern/multi_agent.html))[Agents](https://u-zero.github.io/ZeroGraph/design_pattern/agent.html), [Workflow](https://u-zero.github.io/ZeroGraph/design_pattern/workflow.html), [RAG](https://u-zero.github.io/ZeroGraph/design_pattern/rag.html), and more.
 - **TypeScript Native**: Full type safety and excellent IDE support.
 - **[Agentic Coding](https://zacharyhuang.substack.com/p/agentic-coding-the-most-fun-way-to)**: Let AI Agents (e.g., Cursor AI) build Agents—10x productivity boost!
@@ -150,14 +150,14 @@ Check out the [examples](./examples) directory for comprehensive usage examples:
 
 ## Why ZeroGraph TypeScript?
 
-Current LLM frameworks are bloated... You only need 100 lines for LLM Framework!
+Current LLM frameworks are bloated... You only need 300 lines for LLM Framework!
 
 |               | **Lines** | **Size**  | **TypeScript** |
 | ------------- | :-------: | :-------: | :------------: |
 | LangChain     |   405K    |  +166MB   |       ❌       |
 | CrewAI        |    18K    |  +173MB   |       ❌       |
 | LangGraph     |    37K    |   +51MB   |       ❌       |
-| **ZeroGraph** |  **100**  | **+56KB** |     **✅**     |
+| **ZeroGraph** |  **300**  | **+10KB** |     **✅**     |
 
 ## Contributing
 
