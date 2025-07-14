@@ -1,0 +1,39 @@
+{
+  "name": "zerograph-template",
+  "version": "1.0.0",
+  "description": "ZeroGraph TypeScript Template for Agentic Coding",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "ts-node main.ts",
+    "example": "ts-node examples/example.ts",
+    "async-example": "ts-node examples/async-example.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "zerograph",
+    "llm",
+    "ai",
+    "agent",
+    "workflow",
+    "typescript",
+    "template"
+  ],
+  "author": "ZeroGraph Team",
+  "license": "MIT",
+  "dependencies": {
+    "@u0z/zero-graph": "^0.0.1",
+    "openai": "^4.0.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/readline-sync": "^1.4.4",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
