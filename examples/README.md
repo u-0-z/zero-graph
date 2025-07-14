@@ -16,12 +16,14 @@ npm run dev
 
 ### 🚀 Basic Examples
 
-| Example                       | Difficulty          | Description                         |
-| ----------------------------- | ------------------- | ----------------------------------- |
-| [Hello World](./hello-world/) | ⭐ _Beginner_       | Your first ZeroGraph application    |
-| [Agent](./agent/)             | ⭐⭐ _Intermediate_ | Research agent with decision making |
-| [Batch](./batch/)             | ⭐⭐ _Intermediate_ | Process multiple items efficiently  |
-| [Async](./async/)             | ⭐⭐ _Intermediate_ | Asynchronous operations and flows   |
+| Example                                       | Difficulty          | Description                                             |
+| --------------------------------------------- | ------------------- | ------------------------------------------------------- |
+| [Hello World](./hello-world/)                 | ⭐ _Beginner_       | Your first ZeroGraph application                        |
+| [Agent](./agent/)                             | ⭐⭐ _Intermediate_ | Research agent with decision making                     |
+| [Batch](./batch/)                             | ⭐⭐ _Intermediate_ | Process multiple items efficiently                      |
+| [Async](./async/)                             | ⭐⭐ _Intermediate_ | Asynchronous operations and flows                       |
+| [Async Chat Complete](./async-chat-complete/) | ⭐⭐ _Intermediate_ | Complete single-file async chat with OpenAI (vm2 ready) |
+| [Async Chat Simple](./async-chat-simple/)     | ⭐ _Beginner_       | Simplified async chat (requires ZeroGraph in vm2)       |
 
 ### 🎯 Design Patterns
 
@@ -42,6 +44,60 @@ Each example demonstrates key ZeroGraph concepts:
 - **Actions**: Conditional flow control
 - **Batch Processing**: Handle multiple items
 - **Async Support**: Non-blocking operations
+
+### 🎯 Special Examples
+
+#### Single File JavaScript Examples
+
+For server-side execution in restricted environments (like vm2), we provide two JavaScript implementations:
+
+#### Complete Version
+
+- **[async-chat-complete](./async-chat-complete/)**: Complete async chat application with OpenAI integration
+  - ✅ Zero external dependencies
+  - ✅ vm2 sandbox compatible
+  - ✅ Built-in ZeroGraph framework
+  - ✅ Built-in OpenAI client
+  - ✅ Fallback mechanisms for API failures
+  - ✅ Conversation memory management
+
+#### Simplified Version
+
+- **[async-chat-simple](./async-chat-simple/)**: Lightweight async chat for environments with ZeroGraph
+  - ✅ Minimal code footprint (~6KB vs ~15KB)
+  - ✅ Faster startup time
+  - ✅ Lower memory usage
+  - ✅ Requires ZeroGraph and OpenAI provided by host
+  - ✅ Business logic focused
+
+**Usage in vm2:**
+
+```javascript
+const { VM } = require('vm2');
+const fs = require('fs');
+
+// Complete version - self-contained
+const completeCode = fs.readFileSync(
+  'examples/async-chat-complete/index.js',
+  'utf8'
+);
+const vm1 = new VM({ sandbox: { console, fetch, process } });
+vm1.run(completeCode);
+
+// Simplified version - requires host-provided services
+const OpenAI = require('openai');
+const ZeroGraph = require('@u0z/zero-graph');
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+const simpleCode = fs.readFileSync(
+  'examples/async-chat-simple/index.js',
+  'utf8'
+);
+const vm2 = new VM({
+  sandbox: { console, openai, ZeroGraph, setTimeout, Promise, JSON },
+});
+vm2.run(simpleCode);
+```
 
 ## Running Examples
 

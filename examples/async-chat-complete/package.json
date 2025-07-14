@@ -1,0 +1,30 @@
+{
+  "name": "zerograph-async-chat-complete",
+  "version": "1.0.0",
+  "description": "Complete single-file async chat application with built-in ZeroGraph framework and OpenAI integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "zerograph",
+    "async",
+    "chat",
+    "openai",
+    "vm2",
+    "single-file",
+    "complete"
+  ],
+  "author": "ZeroGraph Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/u-0-z/zero-graph"
+  }
+}

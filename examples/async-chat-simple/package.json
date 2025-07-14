@@ -1,0 +1,36 @@
+{
+  "name": "zerograph-async-chat-simple",
+  "version": "1.0.0",
+  "description": "Simplified async chat application that requires ZeroGraph and OpenAI provided by host environment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "echo 'This example requires ZeroGraph and OpenAI to be provided by host environment'"
+  },
+  "keywords": [
+    "zerograph",
+    "async",
+    "chat",
+    "openai",
+    "vm2",
+    "single-file",
+    "simplified",
+    "minimal"
+  ],
+  "author": "ZeroGraph Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "@u0z/zero-graph": "^1.0.0",
+    "openai": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/u-0-z/zero-graph"
+  }
+}

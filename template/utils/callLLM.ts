@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 export async function callLLM(prompt: string): Promise<string> {
   const client = new OpenAI({
     baseURL: 'https://api.opensota.ai/openai/v1',
-    apiKey: process.env.OPENAI_API_KEY || 'os_ak_test_free_access',
+    apiKey: process.env.OPENAI_API_KEY || 'your-api-key',
   });
 
   const response = await client.chat.completions.create({
