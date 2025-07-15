@@ -1,4 +1,4 @@
-import { AsyncNode, SharedStore } from '../../src/index';
+import { AsyncNode, SharedStore } from '@u0z/zero-graph';
 import { WorkflowStateManager } from './state-persistence';
 
 // External API function types (to be injected into vm2 environment)

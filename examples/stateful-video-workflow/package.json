@@ -23,7 +23,9 @@
   ],
   "author": "ZeroGraph Team",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@u0z/zero-graph": "^0.0.1"
+  },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "ts-node": "^10.0.0",

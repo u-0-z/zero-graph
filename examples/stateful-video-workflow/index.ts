@@ -25,7 +25,7 @@
  * - optimizePrompt, generateImage, generateTTS, generateVideo functions
  */
 
-import { SharedStore } from '../../src/index';
+import { SharedStore } from '@u0z/zero-graph';
 import { createStateManager, WorkflowState } from './state-persistence';
 import { createStatefulVideoWorkflow } from './workflow-flow';
 

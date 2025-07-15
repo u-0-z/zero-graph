@@ -1,4 +1,4 @@
-import { SharedStore } from '../../src/index';
+import { SharedStore } from '@u0z/zero-graph';
 
 // Type definitions for state persistence
 export interface WorkflowState {

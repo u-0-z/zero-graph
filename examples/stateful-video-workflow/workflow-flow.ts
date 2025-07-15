@@ -1,4 +1,4 @@
-import { AsyncFlow, SharedStore } from '../../src/index';
+import { AsyncFlow, SharedStore } from '@u0z/zero-graph';
 import { WorkflowStateManager } from './state-persistence';
 import {
   UserInputNode,
