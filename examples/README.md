@@ -16,23 +16,25 @@ npm run dev
 
 ### 🚀 Basic Examples
 
-| Example                                       | Difficulty          | Description                                             |
-| --------------------------------------------- | ------------------- | ------------------------------------------------------- |
-| [Hello World](./hello-world/)                 | ⭐ _Beginner_       | Your first ZeroGraph application                        |
-| [Agent](./agent/)                             | ⭐⭐ _Intermediate_ | Research agent with decision making                     |
-| [Batch](./batch/)                             | ⭐⭐ _Intermediate_ | Process multiple items efficiently                      |
-| [Async](./async/)                             | ⭐⭐ _Intermediate_ | Asynchronous operations and flows                       |
-| [Async Chat Complete](./async-chat-complete/) | ⭐⭐ _Intermediate_ | Complete single-file async chat with OpenAI (vm2 ready) |
-| [Async Chat Simple](./async-chat-simple/)     | ⭐ _Beginner_       | Simplified async chat (requires ZeroGraph in vm2)       |
+| Example                                               | Difficulty          | Description                                                     |
+| ----------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
+| [Hello World](./hello-world/)                         | ⭐ _Beginner_       | Your first ZeroGraph application                                |
+| [Agent](./agent/)                                     | ⭐⭐ _Intermediate_ | Research agent with decision making                             |
+| [Batch](./batch/)                                     | ⭐⭐ _Intermediate_ | Process multiple items efficiently                              |
+| [Async](./async/)                                     | ⭐⭐ _Intermediate_ | Asynchronous operations and flows                               |
+| [Async Chat Complete](./async-chat-complete/)         | ⭐⭐ _Intermediate_ | Complete single-file async chat with OpenAI (vm2 ready)         |
+| [Async Chat Simple](./async-chat-simple/)             | ⭐ _Beginner_       | Simplified async chat (requires ZeroGraph in vm2)               |
+| [Stateful Video Workflow](./stateful-video-workflow/) | ⭐⭐⭐ _Advanced_   | Video generation with state persistence and resumable execution |
 
 ### 🎯 Design Patterns
 
-| Pattern              | Example                         | Description                       |
-| -------------------- | ------------------------------- | --------------------------------- |
-| **Agent**            | [Research Agent](./agent/)      | Autonomous decision-making system |
-| **Workflow**         | [Content Pipeline](./workflow/) | Multi-step content generation     |
-| **Batch Processing** | [Text Translation](./batch/)    | Handle multiple items at once     |
-| **Async Operations** | [Recipe Finder](./async/)       | Non-blocking I/O operations       |
+| Pattern               | Example                                        | Description                             |
+| --------------------- | ---------------------------------------------- | --------------------------------------- |
+| **Agent**             | [Research Agent](./agent/)                     | Autonomous decision-making system       |
+| **Workflow**          | [Content Pipeline](./workflow/)                | Multi-step content generation           |
+| **Batch Processing**  | [Text Translation](./batch/)                   | Handle multiple items at once           |
+| **Async Operations**  | [Recipe Finder](./async/)                      | Non-blocking I/O operations             |
+| **State Persistence** | [Video Generation](./stateful-video-workflow/) | Resumable workflows with external state |
 
 ### 💡 Core Concepts
 
